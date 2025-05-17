@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Jonas Luna</h1>
+            <p>A passionate Video Editor showcasing my work.</p>
+            <a href="#projects" class="button">View My Projects</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hey, there! I thrive on creativity and technology. By day, you might find me making the perfect latte as a barista, 
+        but my mind is often elsewhere, either carefully editing videos to bring stories to life or indulging myself in video game world. 
+        That spark of invention also extends to the digital field, I've experimented with coding and discovered the power of no-code platforms 
+        for application development. It's all about turning an idea into a reality, whether through visuals, activity, or a useful software. 
+        I am motivated by the desire to learn, create, and connect with others through my different admiration.</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Barista</li>
+                <li>Video Editor</li>
+                <li>Writer</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Brief description of project 1.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Brief description of project 2.</p>
+                <a href="#">View Project</a>
+            </div>
+            </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out!</p>
+        <p>Open for comments and suggestion</p>
+        <p>Contact Number: 09*********</p>
+        <p>Contact Number: 09*********</p>
+        <p>Email: jonasluna@gmail.com</p>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit" class="button">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jonas's Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
